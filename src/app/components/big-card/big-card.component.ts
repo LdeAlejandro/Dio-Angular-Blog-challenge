@@ -28,7 +28,7 @@ export class BigCardComponent implements OnInit {
 
   ngAfterViewInit() {
     //typing animation logic
-    const elementTitle = this.el.nativeElement.querySelector('.big-card__title a');
+    const elementTitle = this.el.nativeElement.querySelector('.big-card__title h1');
     this.typingService.typeText(elementTitle, this.cardTitle, 50);
 
     const elementDescription = this.el.nativeElement.querySelector('.big-card__description p');
