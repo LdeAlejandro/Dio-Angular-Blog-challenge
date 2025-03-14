@@ -26,9 +26,8 @@
     margin-top: 20px;
   }
   
-  .big-card__description > p > a {
+  .big-card__description > p  {
     color: grey;
-    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .big-card__photo > img{

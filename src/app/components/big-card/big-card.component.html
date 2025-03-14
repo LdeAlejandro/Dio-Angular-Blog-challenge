@@ -1,7 +1,7 @@
 <div class="container__big-card">
     <div class="big-card__photo">
         <img
-        src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/06/Watch-Dogs-Wrench.jpg" 
+        src={{photoCover}}
         alt="big-card"
         height="200px"
         srcset=""
@@ -10,15 +10,13 @@
    
 
     <div class="big-card__title">
-        <h1><a href="">Saiu a nova versão do Angular</a></h1>
+        <h1><!--<a [routerLink]="['content', Id]">-->{{cardTitle}}<!--</a>--></h1>
     </div>
     <div class="big-card__description">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed blandit neque, semper pulvinar nisi. Morbi consequat lorem vitae sagittis placerat. Maecenas aliquam scelerisque diam id sollicitudin. Cras iaculis egestas arcu vitae congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ut fringilla tellus. Sed tincidunt aliquam venenatis. Suspendisse placerat, metus eu porttitor dignissim, tellus tortor maximus metus, a venenatis erat tellus vel dui.
+            <!--<a [routerLink]="['content', Id]">-->{{cardDescription}}
 
-Sed ultrices justo a est vulputate maximus. Aenean ac bibendum risus, sed mollis tortor. Vivamus pellentesque risus eu justo volutpat luctus. Donec a eros in risus maximus vehicula sit amet et arcu. Vestibulum facilisis mattis enim, ac hendrerit justo malesuada in. Vestibulum eget pretium magna. Vivamus sed egestas diam. Nunc placerat est nec mauris ultricies, sed efficitur libero congue. Aliquam tempor maximus erat, ut malesuada nisl.
-
-Praesent consequat posuere nunc. Sed libero lorem, laoreet quis magna vel, efficitur ultrices eros
-        </p>
+            <!--</a>-->
+           </p>
     </div>
 </div>

@@ -6,11 +6,18 @@
   .container__small-card-content{
     display: flex;
     flex-direction: row;
-    padding: 20px;
+   
     box-sizing: border-box;
   }
   
   .small-card__photo > img {
+    
+    width: 200px;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+
+  .small-card__photo > video {
     
     width: 200px;
     min-width: 200px;

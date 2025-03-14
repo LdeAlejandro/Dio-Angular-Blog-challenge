@@ -1,16 +1,34 @@
-<header>
-    <app-menu-bar>Watch Dogs</app-menu-bar>
-</header>
 
-<app-menu-title></app-menu-title>
+
+<app-menu-title ></app-menu-title>
 <Div class="container__articles">
     <div class="articles__main">
-        <app-big-card>test</app-big-card>
+        <app-big-card Id="0" cardTitle="4tt3mpt1n C0NN3CT10N..." cardDescription="Starting server on port 8080...
+        Configuration file not found, using defaults.
+        Failed to connect to database: Connection timeout after 5000ms.
+        Retrying database connection...
+        Database connection failed: Invalid credentials.
+        User input received: admin' --
+        Possible SQL injection attempt detected.
+        Server shutdown initiated by user request.
+        Failed to close socket: Broken pipe.
+        Server stopped successfully.
+
+        Starting server on port 8080...
+        Configuration file not found, using defaults.
+        Failed to connect to database: Connection timeout after 5000ms.
+        Retrying database connection...
+        Database connection failed: Invalid credentials.
+        User input received: admin' --
+        Possible SQL injection attempt detected.
+       
+        "
+        photoCover="https://pbs.twimg.com/media/Fsm5d8xWAAEwr0M?format=jpg&name=medium">test</app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-    </div>
+        <app-small-card *ngFor="let card of cards" Id="{{card.id}}" cardTitle="{{card.title}}" photoCover="{{card.photoCover}}" ></app-small-card>
+     </div>
+
+   
 </Div>
 

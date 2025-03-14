@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit, ElementRef  } from '@angular/core';
+import { TypingService } from 'src/app/services/typing.service';
 
 @Component({
   selector: 'app-big-card',
@@ -7,9 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  photoCover:string = "";
+  @Input()
+  cardTitle:string = "";
+  @Input()
+  cardDescription:string = "";
+  @Input()
+  Id:string = "0";
+
+
+  constructor(private typingService: TypingService, private el: ElementRef) { 
+
+  }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit() {
+    //typing animation logic
+    const elementTitle = this.el.nativeElement.querySelector('.big-card__title a');
+    this.typingService.typeText(elementTitle, this.cardTitle, 50);
+
+    const elementDescription = this.el.nativeElement.querySelector('.big-card__description p');
+    this.typingService.typeText(elementDescription, this.cardDescription, 5);
+    
   }
 
 }
