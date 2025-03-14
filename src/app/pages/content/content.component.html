@@ -1,10 +1,18 @@
 <div class="container__content">
     <div class="content__cover">
-        <video autoplay loop muted playsinline>
-            <source src="{{ photoCover }}"  type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <!-- <img src="{{ photoCover }}" alt="" srcset=""> -->
+        <img
+        *ngIf="!isVideo()"
+        src={{photoCover}}
+        alt=""
+        srcset=""
+      >
+
+      <video
+      *ngIf="isVideo()"
+      autoplay loop muted playsinline>
+        <source src="{{ photoCover }}"  type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     </div>
     <div class="content__title">
       <h1>{{contentTitle}}</h1>

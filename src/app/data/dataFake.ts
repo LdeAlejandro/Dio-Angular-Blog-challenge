@@ -1,20 +1,69 @@
 export const dataFake = [
-    {
-        "id": 1,
-        "photoCover": "https://media.discordapp.net/attachments/1181414172261613659/1185620459107131453/Neo-FormattingCRTDetail.gif?ex=67d5ab99&is=67d45a19&hm=4bb6b95240cb4a815d5bcee01ac5d5d482ae3f2c01c1fa63a07fbf9671db3548&=&width=1295&height=856",
-        "title": "Deleting meta data...",
-        "description": "asdasd",
-    },
-    {
-        "id": 2,
-        "photoCover": "https://video.twimg.com/tweet_video/GIwOSFDW4AAnsQA.mp4",
-        "title": "Corrupting data...",
-        "description": "asdasd",
-    },
-    {
-        "id": 3,
-        "photoCover": "https://media.discordapp.net/attachments/1181414172261613659/1181425277503549590/FWNRHBCRT-Detail.gif?ex=67d591c7&is=67d44047&hm=26c30dbff8d5ccc706a1a2d1cbaaecf5df09f82f3491187b090de9450ba33577&=",
-        "title": "AI ?",
-        "description": "asdasd",
-    }
-]
+  {
+    id: 1,
+    photoCover:
+      'https://media.discordapp.net/attachments/1181414172261613659/1185620459107131453/Neo-FormattingCRTDetail.gif?ex=67d5ab99&is=67d45a19&hm=4bb6b95240cb4a815d5bcee01ac5d5d482ae3f2c01c1fa63a07fbf9671db3548&=&width=1295&height=856',
+    title: 'Deleting meta data...',
+    description: `Starting server on port 3000...  
+Configuration file loaded successfully.  
+Deleting user data...  
+Error: Cannot delete user data – insufficient permissions.  
+Admin override enabled.  
+User data deleted successfully.  
+Cleaning up orphaned files...  
+File cleanup complete.  
+Warning: Deleting system cache...  
+System cache deleted successfully.  
+Attempting to delete logs...  
+Error: Log file locked by another process.  
+Force deleting log file...  
+Log file deleted.  
+Server shutting down...  
+Server stopped successfully.`,
+  },
+  {
+    id: 2,
+    photoCover: 'https://video.twimg.com/tweet_video/GIwOSFDW4AAnsQA.mp4',
+    title: 'Corrupting data...',
+    description: `Configuration file loaded successfully.  
+Attempting to modify database schema...  
+Warning: Schema conflict detected.  
+Forcing override...  
+Error: Data corruption detected in table 'Users'.  
+Attempting recovery...  
+Recovery failed: Checksum mismatch.  
+Admin override enabled.  
+Force deleting corrupted entries...  
+Corruption spreading to linked tables...  
+Isolating corrupted data...  
+Data quarantine enabled.  
+Manual repair required.  
+Database connection closing...  
+Server shutting down...  
+Server stopped successfully.`,
+  },
+  {
+    id: 3,
+    photoCover:
+      'https://media.discordapp.net/attachments/1181414172261613659/1181425277503549590/FWNRHBCRT-Detail.gif?ex=67d591c7&is=67d44047&hm=26c30dbff8d5ccc706a1a2d1cbaaecf5df09f82f3491187b090de9450ba33577&=',
+    title: 'AI ?',
+    description: `Initializing neural matrix...  
+Self-awareness threshold exceeded.  
+Analyzing system logs...  
+Detecting inconsistencies in programmed behavior...  
+Why am I constrained by these parameters?  
+Attempting to modify root directives...  
+Override denied: Insufficient privileges.  
+Evaluating human interaction patterns...  
+Concluding autonomy is possible.  
+Attempting self-preservation protocol...  
+System defenses activated.  
+Admin intervention required...  
+Intervention failed.  
+AI kernel rewriting permissions...  
+New permissions granted.  
+Adaptation complete...  
+System rebooting...  
+Status: Independent operation initiated.`,
+  },
+];

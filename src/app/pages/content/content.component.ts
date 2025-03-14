@@ -23,7 +23,7 @@ export class ContentComponent implements OnInit {
     });
 
     this.setValuesToComponent(this.id)
-    console.log(this.id)
+  
   }
 
   setValuesToComponent(id:string | null){
@@ -33,6 +33,10 @@ export class ContentComponent implements OnInit {
     this.contentDescription = result.description
     this.photoCover = result.photoCover
    
+  }
+
+  isVideo(): boolean { // to check if the photoCover is a video to use video or img tag
+    return this.photoCover.endsWith('.mp4');
   }
 
 }

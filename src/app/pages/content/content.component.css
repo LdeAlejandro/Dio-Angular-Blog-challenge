@@ -28,6 +28,9 @@
   
   .content__description{
     margin-top: 15px;
+    align-self: center;
+    justify-content: center;
+    max-width: 600px;
   }
   
   .content__description > p{
