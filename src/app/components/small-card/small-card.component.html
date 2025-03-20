@@ -9,9 +9,13 @@
         >
 
         <video
+        #videoPlayer 
+        (mouseover)="playVideo()"
         *ngIf="isVideo()"
         autoplay loop muted playsinline>
-          <source src="{{ photoCover }}"  type="video/mp4">
+          <source src="{{ photoCover }}"  type="video/mp4"
+          
+          >
           Your browser does not support the video tag.
       </video>
       </div>

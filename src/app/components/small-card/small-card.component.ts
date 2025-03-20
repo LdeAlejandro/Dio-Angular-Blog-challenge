@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ElementRef } from '@angular/core';
+import { Component, Input, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { TypingService } from 'src/app/services/typing.service';
 @Component({
   selector: 'app-small-card',
@@ -15,6 +15,8 @@ export class SmallCardComponent implements OnInit {
   cardTitle:string = "";
   @Input()
   Id:string = "0";
+  @ViewChild('videoPlayer') videoPlayer!: ElementRef;
+
   ngOnInit(): void {
   }
 
@@ -23,6 +25,10 @@ export class SmallCardComponent implements OnInit {
     const elementTitle = this.el.nativeElement.querySelector('a');
     this.typingService.typeText(elementTitle, this.cardTitle, 100);
     
+  }
+
+  playVideo() {
+    this.videoPlayer.nativeElement.play();
   }
 
   isVideo(): boolean { // to check if the photoCover is a video to use video or img tag

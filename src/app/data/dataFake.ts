@@ -2,7 +2,7 @@ export const dataFake = [
   {
     id: 1,
     photoCover:
-      'https://media.discordapp.net/attachments/1181414172261613659/1185620459107131453/Neo-FormattingCRTDetail.gif?ex=67d5ab99&is=67d45a19&hm=4bb6b95240cb4a815d5bcee01ac5d5d482ae3f2c01c1fa63a07fbf9671db3548&=&width=1295&height=856',
+      'assets/gifs/gif1.gif',
     title: 'Deleting meta data...',
     description: `Starting server on port 3000...  
 Configuration file loaded successfully.  
@@ -23,7 +23,7 @@ Server stopped successfully.`,
   },
   {
     id: 2,
-    photoCover: 'https://video.twimg.com/tweet_video/GIwOSFDW4AAnsQA.mp4',
+    photoCover: 'assets/gifs/gif2.gif',
     title: 'Corrupting data...',
     description: `Configuration file loaded successfully.  
 Attempting to modify database schema...  
@@ -45,7 +45,7 @@ Server stopped successfully.`,
   {
     id: 3,
     photoCover:
-      'https://media.discordapp.net/attachments/1181414172261613659/1181425277503549590/FWNRHBCRT-Detail.gif?ex=67d591c7&is=67d44047&hm=26c30dbff8d5ccc706a1a2d1cbaaecf5df09f82f3491187b090de9450ba33577&=',
+      'assets/gifs/gif3.gif',
     title: 'AI ?',
     description: `Initializing neural matrix...  
 Self-awareness threshold exceeded.  
